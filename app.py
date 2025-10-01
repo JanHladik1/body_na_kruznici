@@ -34,3 +34,21 @@ ax.set_title("Kružnice")
 
 st.pyplot(fig)
 
+# Postranní panel s informacemi
+st.sidebar.title("O projektu")
+st.sidebar.markdown(
+    """
+    **Autor:** Jan Hladík  
+    **Použité technologie:**  
+    - [Streamlit](https://streamlit.io) (framework pro webové aplikace)  
+    - [NumPy](https://numpy.org) (výpočty a generování bodů)  
+    - [Matplotlib](https://matplotlib.org) (vizualizace grafů)
+    - [ChatGPT](https://chatgpt.com) (tvorba kódu)
+
+    Tento projekt ukazuje generování a vykreslení bodů na kružnici
+    s možností interaktivního nastavení parametrů.
+    """
+)
+
+
+
