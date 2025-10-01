@@ -44,10 +44,10 @@ def generate_pdf():
 
     # Parametry úlohy
     c.setFont("Helvetica", 12)
-    c.drawString(50, height - 100, f"Střed: ({center_x}, {center_y})")
-    c.drawString(50, height - 120, f"Poloměr: {radius} m")
-    c.drawString(50, height - 140, f"Počet bodů: {n_points}")
-    c.drawString(50, height - 160, f"Barva bodů: {color}")
+    c.drawString(50, height - 100, f"Stred: ({center_x}, {center_y})")
+    c.drawString(50, height - 120, f"Polomer: {radius} m")
+    c.drawString(50, height - 140, f"Pocet bodu: {n_points}")
+    c.drawString(50, height - 160, f"Barva bodu: {color}")
 
     # Autor + kontakt
     c.drawString(50, height - 200, "Autor: Jan Hladík")
@@ -83,4 +83,5 @@ st.sidebar.markdown(
     s možností interaktivního nastavení parametrů.
     """
 )
+
 
