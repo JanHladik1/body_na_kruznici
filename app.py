@@ -50,8 +50,8 @@ def generate_pdf():
     c.drawString(50, height - 160, f"Barva bodů: {color}")
 
     # Autor + kontakt
-    c.drawString(50, height - 200, "Autor: Jan Novák")
-    c.drawString(50, height - 220, "Kontakt: jan.novak@email.cz")
+    c.drawString(50, height - 200, "Autor: Jan Hladík")
+    c.drawString(50, height - 220, "Kontakt: janhladik02@seznam.cz")
 
     c.showPage()
     c.save()
@@ -71,14 +71,16 @@ st.download_button(
 st.sidebar.title("O projektu")
 st.sidebar.markdown(
     """
-    **Autor:** Jan Novák  
+    **Autor:** Jan Hladík  
     **Použité technologie:**  
     - Streamlit  
     - NumPy  
     - Matplotlib  
-    - ReportLab (export do PDF)  
+    - ReportLab (export do PDF)
+    - ChatGPT
 
     Tento projekt ukazuje generování a vykreslení bodů na kružnici
     s možností interaktivního nastavení parametrů.
     """
 )
+
