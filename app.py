@@ -20,8 +20,17 @@ y = center_y + radius * np.sin(theta)
 fig, ax = plt.subplots(figsize=(6,6))
 ax.scatter(x, y, c=color)
 ax.plot(x, y, c=color, alpha=0.5)  # spojnice bodů
+
+# Zachování kruhového poměru
 ax.set_aspect("equal", adjustable="box")
+
+# Popisky os s jednotkami
+ax.set_xlabel("X [m]")
+ax.set_ylabel("Y [m]")
+
+# Síť + osy
 ax.grid(True)
 ax.set_title("Kružnice")
 
 st.pyplot(fig)
+
